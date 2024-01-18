@@ -1,4 +1,4 @@
-module github.com/ivcap-works/ivcap-sdk-go
+module github.com/ivcap-works/ivcap-service-sdk-go
 
 go 1.20
 
