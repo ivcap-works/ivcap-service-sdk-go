@@ -1,0 +1,38 @@
+{
+  "name": "Gradient Text Image",
+  "description": "Creates an image with a customizable text.",
+  "parameters": [
+    {
+      "name": "msg",
+      "label": "Message to display",
+      "type": "string"
+    },
+    {
+      "name": "img-art",
+      "label": "Image artifact to use as background",
+      "type": "artifact",
+      "optional": true
+    },
+    {
+      "name": "img-url",
+      "label": "Image url (external) to use as background",
+      "type": "string",
+      "optional": true
+    }
+  ],
+  "tags": [
+    "image"
+  ],
+  "banner": "http://acme.com/assets/data.png",
+  "provider-id": "@PROVIDER_ID@",
+  "account-id": "@ACCOUNT_ID@",
+  "workflow": {
+    "type": "basic",
+    "basic": {
+      "image": "@CONTAINER@",
+      "command": [
+        "/text-on-image"
+      ]
+    }
+  }
+}

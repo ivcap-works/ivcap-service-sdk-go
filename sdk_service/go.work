@@ -2,5 +2,5 @@ go 1.20
 
 use (
 	.
-	./examples/gradient_text
+	./examples/text_on_image
 )

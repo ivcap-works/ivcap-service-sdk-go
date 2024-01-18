@@ -1,0 +1,18 @@
+id: ivcap:service:02f58149-9dbb-56e9-96c7-0cad48f9db2c:ai4design-cfd
+name: Gradient Text Image
+description: Creates an image with a customizable text.
+parameters:
+  - description: Message to display
+    name: msg
+    type: string
+  - description: Image artifact to use as backgroundConfiguration
+    name: img-art
+    type: artifact
+    optional: true
+account-id: @ACCOUNT_ID@
+workflow:
+  basic:
+    command:
+      - /text-on-image
+    image: @CONTAINER@
+  type: basic
